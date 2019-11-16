@@ -1,0 +1,53 @@
+description = "Homepage Layout"
+==
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Sharthi Microfinance Company</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+     <link href="{{ [
+            'assets/css/style.css'
+    ]|theme }}" rel="stylesheet">
+    {% styles %}
+   
+
+</head>
+<body>
+{%partial 'header_navigation'%}
+
+{%partial 'hero'%}
+
+{%partial 'features_area'%}
+
+{%partial 'call_to_action'%}
+
+{%partial 'call_2' %}
+  
+{%partial 'misc' %}
+
+{%partial 'footer' %}
+
+   <script src="{{ [
+      'assets/js/jquery/jquery-2.2.4.min.js',
+      'assets/js/bootstrap/popper.min.js',
+      'assets/js/bootstrap/bootstrap.min.js',
+      'assets/js/plugins/plugins.js',
+      'assets/js/active.js',
+      
+    ]|theme }}"></script>
+    {% framework extras %}
+    {% scripts %}
+
+</body>
